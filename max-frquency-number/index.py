@@ -1,11 +1,10 @@
-from typing import Dict, Optional
 
 def find_max(list):
     if len(list) == 0:
         return None
-    res: Optional[int] = None
-    numMap: Dict[int, int] = {}
-    max: int = 0
+    res = None
+    numMap = {}
+    max = 0
 
     for num in list:
         numMap[num] = numMap.get(num, 0) + 1
